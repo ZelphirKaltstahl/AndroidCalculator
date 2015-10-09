@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/CALCULATOR_VALUE_1_LABEL_TEXT"
+            android:id="@+id/calculator_value_1_label"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/CALCULATOR_VALUE_2_LABEL_TEXT"
+            android:id="@+id/calculator_value_2_label"
+            android:layout_column="3" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/value_1_number_text_field"
+            android:layout_column="0"
+            android:text="@string/CALCULATOR_VALUE_1_DEFAULT_VALUE" />
+
+        <EditText
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/value_2_number_text_field"
+            android:layout_column="1"
+            android:text="@string/CALCULATOR_VALUE_2_DEFAULT_VALUE" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/CALCULATOR_OPERATION_PLUS_BUTTON_TEXT"
+            android:id="@+id/calculator_plus_button"
+            android:layout_column="0"
+            android:minHeight="0dp" />
+
+        <Button
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/CALCULATOR_OPERATION_MINUS_BUTTON_TEXT"
+            android:id="@+id/calculator_minus_button"
+            android:layout_column="1"
+            android:minHeight="0dp" />
+
+        <Button
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/CALCULATOR_OPERATION_MULTIPLY_BUTTON_TEXT"
+            android:id="@+id/calculator_multiply_button"
+            android:layout_column="2"
+            android:minHeight="0dp" />
+
+        <Button
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/CALCULATOR_OPERATION_DIVIDE_BUTTON_TEXT"
+            android:id="@+id/calculator_divide_button"
+            android:layout_column="3"
+            android:minHeight="0dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/CALCULATOR_RESULT_LABEL_TEXT"
+            android:id="@+id/calculator_result_label" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/CALCULATOR_RESULT_DEFAULT_VALUE"
+            android:id="@+id/calculator_result_text_view"
+            android:layout_column="0" />
+    </TableRow>
+
+</TableLayout>

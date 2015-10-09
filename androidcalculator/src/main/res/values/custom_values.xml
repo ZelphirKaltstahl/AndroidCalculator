@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK_BUTTON_TEXT">OK</string>
+    <string name="CANCEL_BUTTON_TEXT">cancel</string>
+    <string name="LOREM_IPSUM_TEXT">Lorem Ipsum</string>
+
+    <string name="CALCULATOR_VALUE_1_LABEL_TEXT">Value 1</string>
+    <string name="CALCULATOR_VALUE_2_LABEL_TEXT">Value 2</string>
+    <string name="CALCULATOR_RESULT_LABEL_TEXT">Result</string>
+
+    <!--<integer name="CALCULATOR_VALUE_1_DEFAULT_VALUE">0</integer>-->
+    <string name="CALCULATOR_VALUE_1_DEFAULT_VALUE">0</string>
+    <!--<integer name="CALCULATOR_VALUE_2_DEFAULT_VALUE">0</integer>-->
+    <string name="CALCULATOR_VALUE_2_DEFAULT_VALUE">0</string>
+    <string name="CALCULATOR_RESULT_DEFAULT_VALUE">0</string>
+
+    <string name="CALCULATOR_OPERATION_PLUS_BUTTON_TEXT">+</string>
+    <string name="CALCULATOR_OPERATION_MINUS_BUTTON_TEXT">-</string>
+    <string name="CALCULATOR_OPERATION_MULTIPLY_BUTTON_TEXT">*</string>
+    <string name="CALCULATOR_OPERATION_DIVIDE_BUTTON_TEXT">/</string>
+</resources>
