@@ -6,4 +6,30 @@
 .idea/*gradle.xml
 .idea/dictionaries
 .idea/*.iws
+
+# built application files
+*.apk
+*.ap_
 build/
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
