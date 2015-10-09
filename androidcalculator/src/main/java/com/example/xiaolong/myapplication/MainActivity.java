@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
     private TextView value_1_label;
     private TextView value_2_label;
     private TextView result_label;
-    private TextView result_text_view;
+    private EditText result_text_view;
 
     private EditText value_1_edit_text;
     private EditText value_2_edit_text;
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
         multiply_button = (Button) findViewById(R.id.calculator_multiply_button);
         divide_button = (Button) findViewById(R.id.calculator_divide_button);
 
-        result_text_view = (TextView) findViewById(R.id.calculator_result_text_view);
+        result_text_view = (EditText) findViewById(R.id.calculator_result_text_view);
     }
 
     private Double get_value_1() {
