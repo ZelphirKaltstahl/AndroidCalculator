@@ -1,4 +1,4 @@
-package com.example.xiaolong.myapplication;
+package com.example.xiaolong.androidcalculator;
 
 import org.junit.Test;
 

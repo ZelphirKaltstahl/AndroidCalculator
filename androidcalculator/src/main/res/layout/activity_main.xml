@@ -42,7 +42,7 @@
 
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/value_1_number_text_field"
+            android:id="@+id/value_1_number_edit_text"
             android:layout_column="0"
             android:text="@string/CALCULATOR_VALUE_1_DEFAULT_VALUE" />
 
@@ -53,7 +53,7 @@
 
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/value_2_number_text_field"
+            android:id="@+id/value_2_number_edit_text"
             android:layout_column="1"
             android:text="@string/CALCULATOR_VALUE_2_DEFAULT_VALUE" />
     </TableRow>
@@ -127,7 +127,7 @@
 
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/CALCULATOR_RESULT_DEFAULT_VALUE"
-            android:id="@+id/calculator_result_text_view"
+            android:id="@+id/calculator_result_edit_text"
             android:layout_column="0" />
     </TableRow>
 
