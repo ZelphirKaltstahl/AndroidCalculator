@@ -70,7 +70,9 @@
             android:text="@string/CALCULATOR_OPERATION_PLUS_BUTTON_TEXT"
             android:id="@+id/calculator_plus_button"
             android:layout_column="0"
-            android:minHeight="0dp" />
+            android:minHeight="0dp"
+
+            android:onClick="calculate" />
 
         <Button
             android:layout_weight=".25"
@@ -80,7 +82,9 @@
             android:text="@string/CALCULATOR_OPERATION_MINUS_BUTTON_TEXT"
             android:id="@+id/calculator_minus_button"
             android:layout_column="1"
-            android:minHeight="0dp" />
+            android:minHeight="0dp"
+
+            android:onClick="calculate" />
 
         <Button
             android:layout_weight=".25"
@@ -90,7 +94,9 @@
             android:text="@string/CALCULATOR_OPERATION_MULTIPLY_BUTTON_TEXT"
             android:id="@+id/calculator_multiply_button"
             android:layout_column="2"
-            android:minHeight="0dp" />
+            android:minHeight="0dp"
+
+            android:onClick="calculate" />
 
         <Button
             android:layout_weight=".25"
@@ -100,7 +106,9 @@
             android:text="@string/CALCULATOR_OPERATION_DIVIDE_BUTTON_TEXT"
             android:id="@+id/calculator_divide_button"
             android:layout_column="3"
-            android:minHeight="0dp" />
+            android:minHeight="0dp"
+
+            android:onClick="calculate" />
     </TableRow>
 
     <TableRow

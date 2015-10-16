@@ -9,8 +9,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 
+import java.util.HashMap;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import model.ViewAction;
 
 public class MainActivity extends Activity {
 
@@ -24,12 +27,14 @@ public class MainActivity extends Activity {
     @Bind(R.id.calculator_multiply_button) Button multiply_button;
     @Bind(R.id.calculator_divide_button) Button divide_button;
 
+    HashMap<View, ViewAction> view_actions = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        addActionListeners();
+        initializeViewActions();
     }
 
     private Double get_value(EditText editText) {
@@ -44,46 +49,42 @@ public class MainActivity extends Activity {
         return double_value_1;
     }
 
-    private void addActionListeners() {
-        plus_button.setOnClickListener(new OnClickListener() {
+    private void initializeViewActions() {
+        view_actions.put(plus_button, new ViewAction() {
             @Override
-            public void onClick(View v) {
+            public void execute() {
                 Double result = get_value(value_1_edit_text) + get_value(value_2_edit_text);
                 result_edit_text.setText(result.toString());
             }
         });
 
-        minus_button.setOnClickListener(new OnClickListener() {
+        view_actions.put(minus_button, new ViewAction() {
             @Override
-            public void onClick(View v) {
+            public void execute() {
                 Double result = get_value(value_1_edit_text) - get_value(value_2_edit_text);
                 result_edit_text.setText(result.toString());
             }
         });
 
-        multiply_button.setOnClickListener(new OnClickListener() {
+        view_actions.put(multiply_button, new ViewAction() {
             @Override
-            public void onClick(View v) {
+            public void execute() {
                 Double result = get_value(value_1_edit_text) * get_value(value_2_edit_text);
                 result_edit_text.setText(result.toString());
             }
         });
 
-        divide_button.setOnClickListener(new OnClickListener() {
+        view_actions.put(divide_button, new ViewAction() {
             @Override
-            public void onClick(View v) {
+            public void execute() {
                 Double result = get_value(value_1_edit_text) / get_value(value_2_edit_text);
                 result_edit_text.setText(result.toString());
             }
         });
-        // could use actions for each view element, an action contains a method which will then
-        // be executed and we need implementations of action for each View.
     }
 
-    private void calculate(View view) {
-        // could use actions for each view element, an action contains a method which will then
-        // be executed and we need implementations of action for each View. Actions in HashMap
-        // stored for O(1) access
+    public void calculate(View view) {
+        view_actions.get(view).execute();
     }
 
 
